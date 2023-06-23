@@ -75,6 +75,23 @@ mapping: dict[str, TuyaBLECategorySelectMapping] = {
             ],
         },
     ),
+    "jmtspro": TuyaBLECategorySelectMapping(
+        products={
+            "a0wnqgxs": [  # GeekTale K01
+                TuyaBLESelectMapping(
+                    dp_id=31,
+                    description=SelectEntityDescription(
+                        key="beep_volume",
+                        options=[
+                            "mute",
+                            "normal",
+                        ],
+                        entity_category=EntityCategory.CONFIG,
+                    ),
+                ),
+            ]
+        }
+    ),
     "ms": TuyaBLECategorySelectMapping(
         products={
             "ludzroix": [  # Smart Lock

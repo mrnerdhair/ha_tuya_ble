@@ -173,6 +173,14 @@ devices_database: dict[str, TuyaBLECategoryInfo] = {
             ),
         },
     ),
+    "jtmspro": TuyaBLECategoryInfo(
+        products={
+            "a0wnqgxs": TuyaBLEProductInfo(  # device product_id
+                name="K01",
+                manufacturer="GeekTale"
+            ),
+        },
+    ),
     "ms": TuyaBLECategoryInfo(
         products={
             "ludzroix": TuyaBLEProductInfo(  # device product_id

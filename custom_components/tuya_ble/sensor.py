@@ -138,6 +138,35 @@ mapping: dict[str, TuyaBLECategorySensorMapping] = {
             ]
         }
     ),
+    "jtmspro": TuyaBLECategorySensorMapping(
+        products={
+            "a0wnqgxs": [  # GeekTale K01
+                TuyaBLESensorMapping(
+                    dp_id=21,
+                    description=SensorEntityDescription(
+                        key="alarm_lock",
+                        device_class=SensorDeviceClass.ENUM,
+                        options=[
+                            "wrong_finger",
+                            "wrong_password",
+                            "wrong_card",
+                            "wrong_face",
+                            "tongue_bad",
+                            "too_hot",
+                            "unclosed_time",
+                            "tongue_not_out",
+                            "pry",
+                            "key_in",
+                            "low_battery",
+                            "power_off",
+                            "shock",
+                            "defense",
+                        ],
+                    ),
+                ),
+            ]
+        }
+    ),
     "ms": TuyaBLECategorySensorMapping(
         products={
             "ludzroix": [  # Smart Lock
